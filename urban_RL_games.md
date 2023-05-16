@@ -4,9 +4,14 @@
 > 
 > Please send the solution reports to coexistence@uj.edu.pl
 
-1. Let's consider set of $Q$ individual travellers want to reach from origin $O$ to destination $D$.
-2. The have two alternatives $a$ and $b$
-3. The cost (travel time)  is given with a naive, non-linearly increasing `BPR` formula:
+---
+
+![image](https://user-images.githubusercontent.com/20555451/238653204-e8af9e52-262b-493b-a931-5cb3695bebd2.png)
+
+
+1. Let's consider set of $Q$ individual travellers want to reach from their origin $O$ to their destination $D$.
+2. Everyday they choose between the two alternative routes: $a$ and $b$.
+3. The cost (travel time) is given with a naive, non-linearly increasing `BPR` formula:
 
 $t_a(q_a) = t^0_a (1 + (q_a / Q_a)^2)$, 
 
@@ -17,9 +22,28 @@ $q_a$ - is the flow (number of vehicles using arc
 $t^0_a$ - is the free flow speed (with no other vehicles)
 $Q_a$ - is the capacity (maximal number of vehices)
 
-4. Each traveller is free to choose between alternatives everyday.
-5. Compute the `System Optimum` and `User Equilibrium` of such system, 
- * System Optimum is the solution where total costs are minimised ($t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a>0 + q_b>0
+
+4. Let's consider the following parameterization:
+
+$t^0_a$ = 5 min
+$t^0_b$ = 8 min
+$Q_a$ = 500 veh/h
+$Q_b$ = 5000 veh/h
+
+--- 
+
+### Tasks:
+1. Compute the `System Optimum` and `User Equilibrium` of such system, 
+ * System Optimum is the solution where total costs are minimised ($t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a + q_b=0 = Q$ , q_a, q_b >0$
+ * User Equilibrium is the system where each traveller is individually satisfied, i.e. $t_a(q_a) = t_b(q_b)$
+
+2. Now let's reforumulate the above as `Reinforcement Learning`, i.e. each agent (traveller) every day makes a decision which path to take to maximise her reward.
+3. Create and solve the RL problem that finds the SO and UE?
+4. Propose the centralized solution, where alll the actions are taken jointly
+5. As well as decentralized (`MARL`) where each agent independently makes her decisions.
+6. Comment on the problem: formulation, complexity, convergence, algorithms used, reward functions, etc.
+
+
 
 
 
