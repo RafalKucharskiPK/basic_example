@@ -17,24 +17,24 @@ $t_a(q_a) = t^0_a (1 + (q_a / Q_a)^2)$,
 
 where:
 
-$t_a(q_a)$ - is the travel time on arc a (or b)
-$q_a$ - is the flow (number of vehicles using arc
-$t^0_a$ - is the free flow speed (with no other vehicles)
-$Q_a$ - is the capacity (maximal number of vehices)
+* $t_a(q_a)$ - is the travel time on arc a (or b)
+* $q_a$ - is the flow (number of vehicles using arc
+* $t^0_a$ - is the free flow speed (with no other vehicles)
+* $Q_a$ - is the capacity (maximal number of vehices)
 
 
 4. Let's consider the following parameterization:
 
-$t^0_a$ = 5 min
-$t^0_b$ = 8 min
-$Q_a$ = 500 veh/h
-$Q_b$ = 5000 veh/h
+* $t^0_a$ = 5 min
+* $t^0_b$ = 8 min
+* $Q_a$ = 500 veh/h
+* $Q_b$ = 5000 veh/h
 
 --- 
 
 ### Tasks:
 1. Compute the `System Optimum` and `User Equilibrium` of such system, 
- * System Optimum is the solution where total costs are minimised ($t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a + q_b=0 = Q$ , q_a, q_b >0$
+ * System Optimum is the solution where total costs are minimised ($t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a + q_b = Q$ , $q_a, q_b >0$
  * User Equilibrium is the system where each traveller is individually satisfied, i.e. $t_a(q_a) = t_b(q_b)$
 
 2. Now let's reforumulate the above as `Reinforcement Learning`, i.e. each agent (traveller) every day makes a decision which path to take to maximise her reward.
