@@ -37,7 +37,7 @@ where:
 1. Compute (analytically) the `System Optimum` and `User Equilibrium` of such system, 
  * System Optimum is the solution where total costs are minimised: 
  
-  $t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a + q_b = Q$ , $q_a, q_b >=0$
+  $t_a(q_a)* q_b + t_b(q_b) * q_b$, s.t. $q_a + q_b = Q$ , $q_a, q_b \geq 0$
  * User Equilibrium is the system where each traveller is individually satisfied, i.e. $t_a(q_a) = t_b(q_b)$
 
 2. Now let's reforumulate the above as `Reinforcement Learning`, i.e. each agent (traveller) every day makes a decision which path to take to maximise her reward.
