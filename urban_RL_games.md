@@ -41,10 +41,10 @@ where:
  * User Equilibrium is the system where each traveller is individually satisfied, i.e. $t_a(q_a) = t_b(q_b)$
 
 2. Now let's reforumulate the above as `Reinforcement Learning`, i.e. each agent (traveller) every day makes a decision which path to take to maximise her reward.
-3. Implement and solve the RL problems which find the SO and UE resepctively.
-4. Propose the centralized solution, where all the actions are taken jointly (coordinated).
-5. As well as decentralized (`MARL`) where each agent independently makes her decisions.
-6. Comment on the problem: formulation, complexity, convergence, algorithms used, reward functions, etc.
+3. What is the state, environment, reward, policy, action inthis problem.
+4. Implement and solve the RL problems which find the SO or UE.
+5. Propose the problem reformulation, such that deep RL method is needed to solve it (e.g. stochastic environment, imperfect knowledge or competing agents).
+8. Comment on the problem: formulation, complexity, convergence, algorithms used, reward functions, etc.
 
 ----
 (c) Rafał Kucharski, 2023
